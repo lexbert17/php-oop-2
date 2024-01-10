@@ -2,17 +2,26 @@
 
 class category  {
 
-    public $titolo;
-    public $icona;
+    private $icon;
+    private $name;
+    
 
-    public function __construct($_titolo , $_icona)
+     function __construct($_icon, $_name)
     {
-        $this->titolo = $_titolo;
-        $this->icona = $_icona;
+        $this->icon = $_icon;
+        $this->name = $_name;  
     }
 
-    public function print_info()
-    {
-        return 'Titolo: ' .$this->titolo . ', Icona: ' .$this->icona;
+    public function setIcon($_icon){
+        $this->icon = $_icon;
     }
-}
+    public function getIcon(){
+        return $this->icon;
+    }
+    public function setName ($_name){
+        $this->name = $_name;
+    }
+    public function getName(){
+        return $this->name;
+    }
+}   
