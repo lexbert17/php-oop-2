@@ -2,10 +2,10 @@
 
 include_once __DIR__ . '/Product.php';
 
-class food extends product {
+class food extends Product {
     private $gusto;
 
-    function __construct($_nome , $_prezzo, $_quantita, category $_categoria, $_gusto){
+    function __construct($_nome , $_prezzo, $_quantita, Category $_categoria, $_gusto){
         parent:: __construct ($_nome, $_prezzo, $_quantita, $_categoria);
         $this-> gusto = $_gusto;
     }

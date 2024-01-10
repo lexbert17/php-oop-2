@@ -1,12 +1,12 @@
 <?php
 include_once __DIR__ . '/Category.php';
-class product {
+class Product {
     protected $nome;
     protected $prezzo;
     protected $quantita;
-    protected category $categoria;
+    protected Category $categoria;
 
-    function __construct($_nome, $_prezzo , $_quantita, category $_categoria){
+    function __construct($_nome, $_prezzo , $_quantita, Category $_categoria){
         $this->nome = $_nome;
         $this->prezzo = $_prezzo;
         $this->quantita = $_quantita;
@@ -37,7 +37,7 @@ class product {
     public function getcategoria(){
         return $this->categoria;
     }
-    public function setcategoria(category $categoria){
+    public function setcategoria(Category $categoria){
         $this->categoria = $categoria;
     }
 

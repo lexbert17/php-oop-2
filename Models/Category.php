@@ -1,6 +1,6 @@
 <?php
 
-class category  {
+class Category  {
 
     private $icon;
     private $name;
