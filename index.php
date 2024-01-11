@@ -9,11 +9,12 @@ $cani = new category('fa-solid fa-dog', 'cani');
 $gatti = new category('fa-solid fa-cat' , 'gatti');
 
 $catalogo = [
-    new Food ('Mio Gatto', 3, 50, $gatti , 'vegetale'),
+    new Food ('Mio Gatto', 3, 50, $gatti ,'vegetale'),
     new Food ('Mio Cane', 4, 33, $cani, 'manzo'),
     new Toy ('topo', 10, 10, $gatti, 'lana'),
     new Toy ('osso', 12, 25, $cani, 'gomma'),
 ];
+var_dump($catalogo)
 ?>
 
 <!DOCTYPE html>

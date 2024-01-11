@@ -1,16 +1,22 @@
 <?php
 include_once __DIR__ . '/Category.php';
+include_once __DIR__ . '/Trait.php';
 class Product {
     protected $nome;
     protected $prezzo;
     protected $quantita;
     protected Category $categoria;
 
-    function __construct($_nome, $_prezzo , $_quantita, Category $_categoria){
+    use Weightable;
+    private $peso;
+    
+
+    function __construct($_nome, $_prezzo , $_quantita, Category $_categoria,){
         $this->nome = $_nome;
         $this->prezzo = $_prezzo;
         $this->quantita = $_quantita;
         $this->categoria = $_categoria;
+       
     }
     
     public function getNome(){
